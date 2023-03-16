@@ -136,7 +136,7 @@ export class ChatGPTBot {
     room: RoomInterface
   ) {
     const gptMessage = await this.getGPTMessage(text);
-    const result = `@${talker.name()} ${text}\n\n------ ${gptMessage}`;
+    const result = `@${talker.name()} ${text}------ ${gptMessage}`;
     await this.trySay(room, result);
   }
   async onMessage(message: Message) {
