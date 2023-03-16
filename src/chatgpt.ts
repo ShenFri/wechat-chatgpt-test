@@ -15,7 +15,7 @@ const sendMessage = async (message: string) => {
         messages: [
           {
             "role": "user",
-            "content": message
+            "content":"test__"+ message
           }
         ],
         temperature: 0.6
