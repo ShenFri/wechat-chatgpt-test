@@ -140,7 +140,7 @@ export class ChatGPTBot {
     await this.trySay(room, result);
   }
   async onMessage(message: Message) {
-    console.log(`🎯 ${message.date()} Message: ${message}`);
+    // console.log(`🎯 ${message.date()} Message: ${message}`);
     const talker = message.talker();
     const rawText = message.text();
     const room = message.room();
